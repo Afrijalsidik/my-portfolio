@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afrijal Sidik - Junior Fullstack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style></style>
+  </head>
+  <body class="text-white cyber-grid">
+    <!-- Animated particles -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden">
+      <div
+        class="particle"
+        style="
+          width: 4px;
+          height: 4px;
+          left: 10%;
+          top: 20%;
+          animation-delay: 0s;
+        "
+      ></div>
+      <div
+        class="particle"
+        style="
+          width: 6px;
+          height: 6px;
+          left: 20%;
+          top: 80%;
+          animation-delay: 2s;
+        "
+      ></div>
+      <div
+        class="particle"
+        style="
+          width: 3px;
+          height: 3px;
+          left: 60%;
+          top: 30%;
+          animation-delay: 4s;
+        "
+      ></div>
+      <div
+        class="particle"
+        style="
+          width: 5px;
+          height: 5px;
+          left: 80%;
+          top: 70%;
+          animation-delay: 6s;
+        "
+      ></div>
+      <div
+        class="particle"
+        style="
+          width: 4px;
+          height: 4px;
+          left: 40%;
+          top: 60%;
+          animation-delay: 8s;
+        "
+      ></div>
+      <div
+        class="particle"
+        style="
+          width: 6px;
+          height: 6px;
+          left: 70%;
+          top: 20%;
+          animation-delay: 10s;
+        "
+      ></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="fixed w-full glass z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#home"
+              class="text-2xl text-white hover:text-purple-400 transition"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-2xl text-white hover:text-purple-400 transition"
+              >About</a
+            >
+            <a
+              href="#projects"
+              class="text-2xl text-white hover:text-purple-400 transition"
+              >Projects</a
+            >
+            <a
+              href="#resume"
+              class="text-2xl text-white hover:text-purple-400 transition"
+              >Resume</a
+            >
+            <a
+              href="#contact"
+              class="text-2xl text-white hover:text-purple-400 transition"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Hamburger Button -->
+          <button
+            id="hamburger"
+            class="md:hidden flex flex-col space-y-1.5 p-2"
+          >
+            <span class="hamburger-line line1 block w-8 h-0.5 bg-white"></span>
+            <span class="hamburger-line line2 block w-8 h-0.5 bg-white"></span>
+            <span class="hamburger-line line3 block w-8 h-0.5 bg-white"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden glass border-t border-white/20"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a
+            href="#home"
+            class="block px-3 py-2 text-2xl text-white hover:bg-purple-500/20 rounded mobile-link"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="block px-3 py-2 text-2xl text-white hover:bg-purple-500/20 rounded mobile-link"
+            >About</a
+          >
+          <a
+            href="#projects"
+            class="block px-3 py-2 text-2xl text-white hover:bg-purple-500/20 rounded mobile-link"
+            >Projects</a
+          >
+          <a
+            href="#resume"
+            class="block px-3 py-2 text-2xl text-white hover:bg-purple-500/20 rounded mobile-link"
+            >Resume</a
+          >
+          <a
+            href="#contact"
+            class="block px-3 py-2 text-2xl text-white hover:bg-purple-500/20 rounded mobile-link"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section
+      id="home"
+      class="min-h-screen md:pl-20 flex md:justify-between items-center pt-16 px-4 relative overflow-hidden"
+    >
+      <div class="absolute inset-0 gradient-bg opacity-30"></div>
+      <div class="text-center max-w-4xl relative z-10 float">
+        <div class="justify-between text-left">
+          <h2
+            class="text-2xl md:text-4xl text-purple-300 mb-1 md:mb-4 justify-between"
+          >
+            Hello, I'm
+          </h2>
+        </div>
+        <h1
+          class="text-4xl md:text-7xl font-bold neon-text mb-2 md:mb-6 text-left"
+        >
+          Afrijal Sidik
+        </h1>
+        <p class="text-2xl md:text-3xl text-purple-200 mb-8 text-left">
+          Junior Fullstack Developer
+        </p>
+
+        <!-- Tombol responsif -->
+        <div class="sm:flex-row gap-4 sm:gap-6 items-center sm:items-stretch">
+          <a
+            href="#projects"
+            class="w-[230px] flex items-center px-6 py-2 glass neon-border bg-white neon-text text-xl rounded-lg hover-glow transition"
+          >
+            <img
+              src="public/images/logo-text-1.svg"
+              alt="NestCreativ"
+              class=""
+            />
+          </a>
+        </div>
+        <!-- Ikon Sosial Media -->
+        <div class="flex justify-start gap-6 mt-6 pl-1">
+          <a
+            href="https://www.linkedin.com/in/afrijal-sidik"
+            target="_blank"
+            class="text-purple-300 hover:text-white transition"
+          >
+            <i class="devicon-linkedin-plain text-4xl"></i>
+          </a>
+          <a
+            href="https://github.com/afrijalsidik"
+            target="_blank"
+            class="text-purple-300 hover:text-white transition"
+          >
+            <i class="devicon-github-original text-4xl"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/afrijalsidik"
+            target="_blank"
+            class="text-purple-300 hover:text-white transition"
+          >
+            <i class="fa-brands fa-instagram text-4xl"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 relative">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-5xl md:text-6xl font-bold text-center neon-text mb-12">
+          About Me
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Gambar -->
+          <div
+            class="glass mx-auto neon-border rounded-2xl flex items-center justify-center hover-glow overflow-hidden"
+          >
+            <img
+              src="public/images/saya3.png"
+              alt="Afrijal Sidik"
+              class="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto object-cover rounded-xl transition-transform duration-500 hover:scale-105"
+            />
+          </div>
+
+          <!-- Teks -->
+          <div class="glass rounded-2xl p-6 sm:p-8 hover-glow">
+            <p
+              class="text-lg sm:text-2xl md:text-2xl text-purple-100 leading-relaxed mb-6"
+            >
+              Saya <span class="font-semibold">Afrijal Sidik</span>, Junior
+              Fullstack Web Developer yang antusias menciptakan website modern,
+              fungsional, dan mudah digunakan. Saya senang mengubah ide atau
+              masalah kompleks menjadi solusi digital yang sederhana dan menarik
+            </p>
+            <p
+              class="text-lg sm:text-2xl md:text-2xl text-purple-100 leading-relaxed mb-6"
+            >
+              Saya juga Mendirikan
+              <a href="" style="color: #2563eb" class="font-semibold"
+                >Nest<span style="color: #ff6b35">Creativ</span>
+              </a>
+              Sebuah jasa pembuatan website dan layanan digital. Nestcreativ
+              membantu UMKM dan pemilik bisnis untuk tampil lebih menonjol di
+              era digital dengan memiliki website yang profesional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 relative">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-5xl md:text-6xl font-bold text-center neon-text mb-12">
+          My Projects
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div class="glass rounded-lg overflow-hidden hover-glow neon-border">
+            <div
+              class="h-48 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center relative overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 opacity-20"
+                style="
+                  background: repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 10px,
+                    rgba(255, 255, 255, 0.1) 10px,
+                    rgba(255, 255, 255, 0.1) 20px
+                  );
+                "
+              ></div>
+              <img src="public/images/project1.jpg" alt="" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-3xl font-bold text-purple-300 mb-3">
+                E-Commerce Website
+              </h3>
+              <p class="text-2xl text-purple-100 mb-4">
+                A fully functional online store with shopping cart and payment
+                integration.
+              </p>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 glass border border-purple-400 text-purple-300 rounded text-xl"
+                  >React</span
+                >
+                <span
+                  class="px-3 py-1 glass border border-purple-400 text-purple-300 rounded text-xl"
+                  >Node.js</span
+                >
+                <span
+                  class="px-3 py-1 glass border border-purple-400 text-purple-300 rounded text-xl"
+                  >MongoDB</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="glass rounded-lg overflow-hidden hover-glow neon-border">
+            <div
+              class="h-48 bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center relative overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 opacity-20"
+                style="
+                  background: repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 10px,
+                    rgba(255, 255, 255, 0.1) 10px,
+                    rgba(255, 255, 255, 0.1) 20px
+                  );
+                "
+              ></div>
+              <img
+                src="public/images/project2.jpg"
+                alt=""
+                class="object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-3xl font-bold text-purple-300 mb-3">
+                Task Management App
+              </h3>
+              <p class="text-2xl text-purple-100 mb-4">
+                A productivity app to manage daily tasks and team collaboration.
+              </p>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 glass border border-purple-400 text-purple-300 rounded text-xl"
+                  >Vue.js</span
+                >
+                <span
+                  class="px-3 py-1 glass border border-purple-400 text-purple-300 rounded text-xl"
+                  >Express</span
+                >
+                <span
+                  class="px-3 py-1 glass border border-purple-400 text-purple-300 rounded text-xl"
+                  >MySQL</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="glass rounded-lg overflow-hidden hover-glow neon-border">
+            <div
+              class="h-48 bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center relative overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 opacity-20"
+                style="
+                  background: repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 10px,
+                    rgba(255, 255, 255, 0.1) 10px,
+                    rgba(255, 255, 255, 0.1) 20px
+                  );
+                "
+              ></div>
+              <img src="public/images/project3.jpg" alt="" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-3xl font-bold text-purple-300 mb-3">
+                Weather Dashboard
+              </h3>
+              <p class="text-2xl text-purple-100 mb-4">
+                Real-time weather information with interactive maps and
+                forecasts.
+              </p>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 glass border border-purple-400 text-purple-300 rounded text-xl"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-3 py-1 glass border border-purple-400 text-purple-300 rounded text-xl"
+                  >API</span
+                >
+                <span
+                  class="px-3 py-1 glass border border-purple-400 text-purple-300 rounded text-xl"
+                  >CSS</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="resume" class="py-20 px-4 relative">
+      <div class="max-w-6xl mx-auto">
+        <div class="mt-12 glass rounded-lg p-8 hover-glow">
+          <h3 class="text-4xl font-bold text-purple-300 mb-10 text-center">
+            Technical Skills
+          </h3>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <!-- HTML -->
+            <div
+              class="glass glass border border-purple-500 p-6 rounded-lg hover-glow flex flex-col items-center"
+            >
+              <i class="devicon-html5-plain colored text-6xl"></i>
+            </div>
+
+            <!-- CSS -->
+            <div
+              class="glass glass border border-purple-500 p-6 rounded-lg hover-glow flex flex-col items-center"
+            >
+              <i class="devicon-css3-plain colored text-6xl"></i>
+            </div>
+
+            <!-- JavaScript -->
+            <div
+              class="glass glass border border-purple-500 p-6 rounded-lg hover-glow flex flex-col items-center"
+            >
+              <i class="devicon-javascript-plain colored text-6xl"></i>
+            </div>
+
+            <!-- React.js -->
+            <div
+              class="glass glass border border-purple-500 p-6 rounded-lg hover-glow flex flex-col items-center"
+            >
+              <i class="devicon-react-original colored text-6xl"></i>
+            </div>
+
+            <!-- PHP -->
+            <div
+              class="glass glass border border-purple-500 p-6 rounded-lg hover-glow flex flex-col items-center"
+            >
+              <i class="devicon-php-plain colored text-6xl"></i>
+            </div>
+
+            <!-- Laravel -->
+            <div
+              class="glass glass border border-purple-500 p-6 rounded-lg hover-glow flex flex-col items-center"
+            >
+              <i class="devicon-laravel-plain colored text-6xl"></i>
+            </div>
+
+            <!-- CodeIgniter -->
+            <div
+              class="glass glass border border-purple-500 p-6 rounded-lg hover-glow flex flex-col items-center"
+            >
+              <i class="devicon-codeigniter-plain colored text-6xl"></i>
+            </div>
+
+            <!-- Bootstrap -->
+            <div
+              class="glass glass border border-purple-500 p-6 rounded-lg hover-glow flex flex-col items-center"
+            >
+              <i class="devicon-bootstrap-plain colored text-6xl"></i>
+            </div>
+
+            <!-- Tailwind CSS -->
+            <div
+              class="glass glass border border-purple-500 p-6 rounded-lg hover-glow flex flex-col items-center"
+            >
+              <i class="devicon-tailwindcss-plain colored text-6xl"></i>
+            </div>
+
+            <!-- MySQL -->
+            <div
+              class="glass glass border border-purple-500 p-6 rounded-lg hover-glow flex flex-col items-center"
+            >
+              <i class="devicon-mysql-original colored text-6xl"></i>
+            </div>
+
+            <!-- Git -->
+            <div
+              class="glass glass border border-purple-500 p-6 rounded-lg hover-glow flex flex-col items-center"
+            >
+              <i class="devicon-git-plain colored text-6xl"></i>
+            </div>
+
+            <!-- Figma -->
+            <div
+              class="glass glass border border-purple-500 p-6 rounded-lg hover-glow flex flex-col items-center"
+            >
+              <i class="devicon-figma-plain colored text-6xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 relative">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-5xl md:text-6xl font-bold text-center neon-text mb-12">
+          Get In Touch
+        </h2>
+        <div class="glass rounded-lg p-8 neon-border hover-glow">
+          <p class="text-2xl md:text-3xl text-purple-100 text-center mb-8">
+            Saya selalu terbuka untuk mendiskusikan proyek baru, ide kreatif,
+            atau peluang untuk menjadi bagian dari visi Anda.
+          </p>
+          <form class="space-y-6">
+            <div>
+              <label class="block text-2xl font-semibold text-purple-300 mb-2"
+                >Name</label
+              >
+              <input
+                type="text"
+                class="w-full px-4 py-3 text-2xl glass border border-purple-400 rounded-lg focus:outline-none focus:border-purple-300 text-white placeholder-purple-300/50"
+                placeholder="Your Name"
+              />
+            </div>
+            <div>
+              <label class="block text-2xl font-semibold text-purple-300 mb-2"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="w-full px-4 py-3 text-2xl glass border border-purple-400 rounded-lg focus:outline-none focus:border-purple-300 text-white placeholder-purple-300/50"
+                placeholder="your.email@example.com"
+              />
+            </div>
+            <div>
+              <label class="block text-2xl font-semibold text-purple-300 mb-2"
+                >Message</label
+              >
+              <textarea
+                rows="5"
+                class="w-full px-4 py-3 text-2xl glass border border-purple-400 rounded-lg focus:outline-none focus:border-purple-300 text-white placeholder-purple-300/50"
+                placeholder="Your message here..."
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full glass neon-border text-white text-2xl py-3 rounded-lg hover-glow transition font-semibold"
+            >
+              Send Message
+            </button>
+          </form>
+
+          <div class="mt-8 pt-8 border-t border-purple-500/30">
+            <div
+              class="flex flex-col sm:flex-row justify-center gap-3 text-2xl"
+            >
+              <a
+                href="mailto:afrijalsidik404@gmail.com"
+                class="text-purple-200 hover:text-purple-400 transition"
+                >afrijalsidik404@gmail.com</a
+              >
+              <a
+                href="tel:+6281234567890"
+                class="text-purple-200 hover:text-purple-400 transition"
+                >+62 822-8051-2578</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="glass py-5 md:py-8 px-4 border-t border-purple-500/30">
+      <div class="max-w-6xl mx-auto text-center">
+        <p class="text-xl text-purple-200">
+          © 2025 Afrijal Sidik. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Hamburger menu toggle
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileLinks = document.querySelectorAll(".mobile-link");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("hamburger-active");
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when a link is clicked
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("hamburger-active");
+          mobileMenu.classList.add("hidden");
+        });
+      });
+
+      // Smooth scroll behavior
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Create more particles dynamically
+      const particleContainer = document.querySelector(".fixed.inset-0");
+      for (let i = 0; i < 15; i++) {
+        const particle = document.createElement("div");
+        particle.className = "particle";
+        particle.style.width = Math.random() * 4 + 2 + "px";
+        particle.style.height = particle.style.width;
+        particle.style.left = Math.random() * 100 + "%";
+        particle.style.top = Math.random() * 100 + "%";
+        particle.style.animationDelay = Math.random() * 20 + "s";
+        particleContainer.appendChild(particle);
+      }
+    </script>
+  </body>
+</html>
