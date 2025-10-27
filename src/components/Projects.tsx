@@ -30,12 +30,21 @@ const Projects: React.FC = () => {
         },
         {
             id: 3,
+            title: 'n8n Ai Automation',
+            description: 'Ai customer Service via whatsapp 24 jam nonstop',
+            image: '/images/project4.png',
+            gradient: 'from-indigo-500 to-purple-500',
+            technologies: ['n8n', 'Chatgpt', 'API Whatsapp'],
+        },
+        {
+            id: 4,
             title: 'Luminix',
             description: 'Luminix - Platform pembelajaran gratis untuk semua',
             image: '/images/project3.png',
             gradient: 'from-indigo-500 to-purple-500',
             technologies: ['Laravel', 'javascript', 'mysql'],
         },
+        
     ];
 
     return (

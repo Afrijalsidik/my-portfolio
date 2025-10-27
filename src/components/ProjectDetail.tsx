@@ -71,7 +71,7 @@ const ProjectDetail: React.FC = () => {
             liveUrl: '',
         },
         {
-            id: 3,
+            id: 4,
             title: 'Luminix',
             description: 'Platform pembelajaran gratis untuk semua.',
             longDescription: 'Luminix adalah platform pembelajaran online gratis yang memungkinkan siswa untuk belajar berbagai course dari instructor tanpa biasa. dibangun dengan sistem multi user(admin, instructor, student) serta di lengkapi dengan CMS untuk mengelola course dan sistem LMS untuk progres belajar siswa. Luminix dirancang dengan fokus pada kemudahan penggunaan, tampilan moderen, dan pengelolaan data yang efisien.',
@@ -96,6 +96,30 @@ const ProjectDetail: React.FC = () => {
             ],
             githubUrl: 'https://github.com/Afrijalsidik/luminix',
             liveUrl: '',
+        },
+        {
+            id: 3,
+            title: 'n8n AI Automation',
+            description: 'Ai customer Service via whatsapp 24 jam nonstop',
+            longDescription: 'n8n AI Automation Customer service adakah sistem otomatis layanan pelanggan berbasis Whatsapp yang berjalan 24 jam nonstop. Proyek ini mengintegrasikan n8n Workflow automation dengan ChatGpt API untuk membuat asisten virtual yang mampu menjawab pertanyaan pelanggan secara otomatis dan kontelektual, layaknya manusia. Sistem ini di gunakan untuk mendukung operasional Nestcreativ, brand jasa pembuatan website, agar dapat melayani klien dengan cepat dan efisien tanpa batas waktu.',
+            gradient: 'from-indigo-500 to-purple-500',
+            technologies: ['n8n', 'ChatGpt API', 'Foonte'],
+            images: [
+                '/images/project4.png',
+                '/images/project4-slide1.png',
+                '/images/project4-slide2.png',
+            ],
+            features: [
+                'Aktif 24/7 nonstop',
+                'Menjawab pesan pelanggan secara otomatis via WhatsApp',
+                'Ditenagai oleh ChatGPT untuk respon natural & kontekstual',
+                'Menyimpan semua data percakapan dan kontak pelanggan',
+                'Mengarahkan pertanyaan ke template jawaban yang sesuai',
+                'Jika pertanyaan tidak dikenali, AI akan memberikan respon umum yang tetap relevan',
+
+            ],
+            githubUrl: '',
+            liveUrl: 'https://wa.me/6285768711072',
         },
     ];
 
