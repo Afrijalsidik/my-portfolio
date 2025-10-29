@@ -5,13 +5,13 @@
     "useDefineForClassFields": true,
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "types": ["vite/client"],
+    "types": ["vite/client", "node"], // ✅ tambah dukungan node
     "skipLibCheck": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": false, // ✅ ubah ke false biar gak error import type
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
@@ -24,12 +24,11 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
-
-    /* 🧩 Tambahkan alias untuk shadcn & react bits */
+    /* 🧩 Alias path */
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "app/*": [".app/components/*"]
+      "app/*": ["./app/components/*"]
     }
   },
   "include": ["src"]

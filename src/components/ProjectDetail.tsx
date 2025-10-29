@@ -13,6 +13,7 @@ interface ProjectDetailData {
     features: string[];
     githubUrl?: string;
     liveUrl?: string;
+    notes?: string;
 }
 
 const ProjectDetail: React.FC = () => {
@@ -68,7 +69,8 @@ const ProjectDetail: React.FC = () => {
                 'Tracking order dengan kode transaksi',
             ],
             githubUrl: 'https://github.com/Afrijalsidik/shynacosmeticfrontend',
-            liveUrl: '',
+            liveUrl: 'https://shayna.nestcreativ.com/',
+            notes: 'Login Admin : https://apishyna.nestcreativ.com/admin/login. admin@gmail.com pw: 123456789'
         },
         {
             id: 4,
@@ -95,7 +97,8 @@ const ProjectDetail: React.FC = () => {
 
             ],
             githubUrl: 'https://github.com/Afrijalsidik/luminix',
-            liveUrl: '',
+            liveUrl: 'https://luminix.nestcreativ.com/',
+            notes: 'Admin:admin@gmail.com pw: 123456789. student: adbul@gmail.com pw:123456789'
         },
         {
             id: 3,
@@ -120,6 +123,7 @@ const ProjectDetail: React.FC = () => {
             ],
             githubUrl: '',
             liveUrl: 'https://wa.me/6285768711072',
+            notes: 'Karna terkendala layanan VPS/Cloud server, n8n Ai Automation Custommer service aktif cuman sampai tanggal 6 November 2025 '
         },
     ];
 
@@ -220,7 +224,7 @@ const ProjectDetail: React.FC = () => {
                 </div>
 
                 {/* Links */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                     {project.githubUrl && (
                         <a
                             href={project.githubUrl}
@@ -244,6 +248,15 @@ const ProjectDetail: React.FC = () => {
                         </a>
                     )}
                 </div>
+                {/* notes*/}
+                {project.notes && (
+                    <div className="glass rounded-lg p-8 mb-8 hover-glow">
+                        <h2 className="text-2xl md:text-4x font-bold text-purple-300 mb-4">
+                            Notes
+                        </h2>
+                        <p>{project.notes}</p>
+                    </div>
+                )}
             </div>
         </div>
     );
